@@ -3,3 +3,4 @@ langchain-openai
 langchain-core
 langchain-community
 duckduckgo-search
+google.generativeai
