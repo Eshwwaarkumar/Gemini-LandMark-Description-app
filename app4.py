@@ -13,7 +13,7 @@ def get_image_description(image_data, gemini_api_key):
     img_data = base64.b64decode(image_data)
     img = {"mime_type": "image/jpeg", "data": img_data}
     response = model.generate_content([
-        "Identify the historical place in this image. Provide its name, location, and a brief historical context.",
+        "Identify the historical place in this image. Give bullet points. Provide its name, location, and a brief historical context.",
         img
     ])
     return response.text
